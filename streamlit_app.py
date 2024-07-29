@@ -27,7 +27,7 @@ ingredients_list = st.multiselect(
 
 # api integration
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
-st.text(fruityvice_response)
+st.text(fruityvice_response.json())
 
 
 if ingredients_list:
